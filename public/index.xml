@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Terminal</title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let AI handle my phone calls using bluetooth</title>
-      <link>//localhost:1313/posts/let-ai-handle-my-phone-calls-using-bluetooth/</link>
+      <link>/posts/let-ai-handle-my-phone-calls-using-bluetooth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/let-ai-handle-my-phone-calls-using-bluetooth/</guid>
+      <guid>/posts/let-ai-handle-my-phone-calls-using-bluetooth/</guid>
       <description>Building What I Want — As Always So, I’ve wanted this to build this for a long time. And I tried so many times, but couldn’t — because of Android (yes Android, I mean the android security for calls). The problem is that you have no control over the microphone or audio going throughout the call. Sure, you can hang up or place a call. You can’t also create virtual sinks or sources in android like usually we do in Linux.</description>
     </item>
   </channel>
