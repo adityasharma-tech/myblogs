@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Let AI handle my phone calls using bluetooth :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Building What I Want — As Always So, I’ve wanted this to build this for a long time. And I tried so many times, but couldn’t — because of Android (yes Android, I mean the android security for calls). The problem is that you have no control over the microphone or audio going throughout the call. Sure, you can hang up or place a call. You can’t also create virtual sinks or sources in android like usually we do in Linux." />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/let-ai-handle-my-phone-calls-using-bluetooth/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="//localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Let AI handle my phone calls using bluetooth">
+<meta property="og:description" content="Building What I Want — As Always So, I’ve wanted this to build this for a long time. And I tried so many times, but couldn’t — because of Android (yes Android, I mean the android security for calls). The problem is that you have no control over the microphone or audio going throughout the call. Sure, you can hang up or place a call. You can’t also create virtual sinks or sources in android like usually we do in Linux." />
+<meta property="og:url" content="//localhost:1313/posts/let-ai-handle-my-phone-calls-using-bluetooth/" />
+<meta property="og:site_name" content="Terminal" />
+
+  <meta property="og:image" content="//localhost:1313/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="0001-01-01 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/let-ai-handle-my-phone-calls-using-bluetooth/">Let AI handle my phone calls using bluetooth</a>
+  </h1>
+  <div class="post-meta"></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/tags/raspberrypi4/">raspberrypi4</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/bluetooth/">bluetooth</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/ai/">ai</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/call-automation/">call automation</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h4 id="building-what-i-want--as-always">Building What I Want — As Always<a href="#building-what-i-want--as-always" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>So, I’ve wanted this to build this for a long time. And I tried so many times, but couldn’t — because of Android (yes Android, I mean the android security for calls). The problem is that you have no control over the microphone or audio going throughout the call. Sure, you can hang up or place a call. You can’t also create virtual sinks or sources in android like usually we do in Linux.</p>
+<p>But one most interesting thing is Google always listen your calls for, so what they call <strong>advertising purposes</strong> ✌🏼, yes I tested it. Anyway, I don’t know how they do it, and in which corner they put these policy. Just for fun I also <code>git clone</code> <strong>AOSP (Android Open Source Project)</strong> on my PC and it installed all libraries and that was around 300+GB. I view the code, gain some and exit.</p>
+<p>Yes, you can also use <a href="https://www.twillio.com/">twillio</a> or <a href="https://sinch.com/">sinch</a> like services &amp; directly use their API, But I wanna use some cheap on-device, full access and just can’t afford it continuously for years.</p>
+<p>Also, In <strong>India</strong> <a href="https://truecaller.com/">truecaller</a> provides AI Assistant features which will talk on behalf of you to spammers and may ring or hang on the call. Good feature but still they collaborated with telecom companies to use their API. Again we can’t afford that.</p>
+<p>I tried 40+ times again &amp; again in different ways gain more access, that’s when I found about call-screening but only for system apps and the default dialer app. After making a simple custom dialer, I got a lot of permission related to calls. But, still I can’t control audio/mic.</p>
+<p>I am more interested in hardware than software, I worked with electronics and IoT’s. So, I’ve got an idea, Let’s take out the part of android we don’t have access to. While you are on a call and connected to a headphone, You can receive audio from speakers and send though microphone &amp; that’s all I want.</p>
+<p>And yes, I was also trying this but, I just realized, we can simply send data to an Bluetooth IoT module as it act&rsquo;s like a headphone. But none of them worked, I tried many bluetooth modules. But, in Bluetooth there are profiles, like hands-free profile <strong>HFP, HDP, HSP.</strong> which are mostly not available on IoT. But now I have got an <code>raspberrypi 4B</code> Model with 4 GB RAM, A whole tiny Linux machine. Has full support over all Bluetooth profiles, and I can write whole code on it. So, now I have to definitely do this.</p>
+<p>Now, I almost got everything I need and it worked for me. So what I’ve done is set the Bluetooth profile of <code>raspberrypi 4</code> to act like a headphone for my android device. And only enabled the Phone calls option and disabled the Media Sharing on my android device for that <strong>raspberrypi 4</strong>. That’s not it, now my phone is using <strong>raspberrypi 4</strong> microphone input as call’s input and <strong>raspberrypi 4</strong> output as call’s output. I learned about <code>virtual sinks</code> and <code>virtual sources</code> on Linux.</p>
+<p>Here’s the diagram explaining virtual sinks and sources, that’s how they loop-back and work.
+!<img alt="Image Description" src="/images/Pasted%20image%2020250704222553.png">
+So, I have to first create a virtual mic, you can create one with this command:</p>
+<pre tabindex="0"><code>pactl load-module module-null-sink sink_name=VirtualMic sink_properties=device.description=VirtualMic
+</code></pre><p>So, when you create a virtual mic (source) using pulseaudio audio server, it will also create a <strong>Null Sink</strong> (Blank Virtual Output Device) because how will you tell what to play in the virtual mic you created? you have to play audio into the Null Sink simply changing the output and it will loopback and go to the created linked source. And I set the default mic (source) to the virtual mic using <code>pactl set-default-source VirtualMic.monitor</code> Now playing some audio and getting a call on my connected phone will play the same audio to the incomming/outgoing call. And recording audio is so easy, you can also create a VIrtual speaker so that it won’t play in the speaker. Now, you can get the input and can send output.
+There are a lot of models availabe on <a href="https://huggingface.com/">huggingface</a> or directly use their spaces to use <strong>TTS (text-to-speech) or STT (speech-to-text)</strong> features. And it seems all done, right?</p>
+<p>No, we have something left. How did your AI or the script knows whose call is these? The call details? How will the receive or hang up calls? I don’t want my AI to talk like a chatbot. No, I don’t want that.</p>
+<p>There is something knows as <strong>AT commands</strong> inbuilt in bluetooth core. that’s how bluetooth communicate between devices to send commands between them. Commands are available according to the profiles they have. So, I tried to listen for AT commands but I can only see it in terminal I can&rsquo;t access it in structured format. And I decided to create an application to manually send commands over <code>RFCOMM</code> in bluetooth, so I added the bluetooth service inside my own android app (I developed an app for myself whatever I need I just add it in). I created a whole bluetooth server, retry mechanism and write commands, lot of mess for with permission in android, really it is too dificult to do things with calling, I can&rsquo;t access phoneNumber, i want to send it though bluetooth the the python RFCOMM server running on raspberry pi 4, So, I used a deprecated feature of android and it works, everything just works, but crashes few times.</p>
+<p>But, now I am retrying the mechanism to listen AT commands directly and I don&rsquo;t have to build the android app. Just trying, here ofono is helping me but let&rsquo;s see what happen. Will update when completed.</p>
+
+      </div></div>
+
+  
+    
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
